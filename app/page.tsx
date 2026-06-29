@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      <section className="min-h-[calc(100dvh-3.5rem)] sm:min-h-[calc(100dvh-4rem)] flex items-center">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 text-center w-full">
-          <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-6">
+      <section className="min-h-[calc(100dvh-3.5rem)] flex items-center">
+        <div className="max-w-3xl mx-auto px-4 py-10 sm:py-12 text-center w-full">
+          <p className="text-[11px] sm:text-xs tracking-[0.25em] sm:tracking-[0.3em] uppercase text-flora-auburn mb-5">
             FLORA · Dresden
           </p>
-          <h1 className="font-display text-[2.35rem] leading-[1.08] sm:text-5xl md:text-6xl font-medium text-flora-bark mb-6">
+          <h1 className="font-display text-[2rem] leading-[1.1] sm:text-5xl md:text-6xl font-medium text-flora-bark mb-5 sm:mb-6">
             Swimwear that
             <br />
             <span className="italic text-flora-auburn">stays with you</span>
@@ -28,10 +28,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 border-t border-flora-sand">
+      <section className="py-12 md:py-24 border-t border-flora-sand">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-            <div>
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-16 md:items-center">
+            <div className="order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-4">
                 Die Vision
               </p>
@@ -48,7 +48,7 @@ export default function HomePage() {
                 plötzlich denkst du mehr an deinen Bikini als an den Moment.
               </p>
             </div>
-            <div className="media-placeholder aspect-[4/5] max-h-[60vh] md:max-h-none">
+            <div className="media-placeholder aspect-[3/4] max-h-[45vh] md:max-h-none order-1 md:order-2">
               <div className="text-center p-8">
                 <p className="text-xs tracking-widest uppercase text-flora-bark/40 mb-2">
                   z.&nbsp;B.
@@ -65,7 +65,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 border-t border-flora-sand bg-white">
+      <section className="py-12 md:py-24 border-t border-flora-sand bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-4 text-center">
             Worum es geht
@@ -101,7 +101,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 border-t border-flora-sand">
+      <section className="py-12 md:py-24 border-t border-flora-sand">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div className="media-placeholder aspect-square order-2 md:order-1">

@@ -11,6 +11,7 @@
   body {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
+    -webkit-tap-highlight-color: transparent;
   }
 
   ::selection {
@@ -21,7 +22,11 @@
 
 @layer components {
   .page-wrap {
-    @apply px-4 sm:px-6 pb-12 md:pb-16;
+    @apply px-4 sm:px-6 pt-2 pb-20 sm:pb-12 md:pb-16;
+  }
+
+  .page-wrap-product {
+    @apply px-4 sm:px-6 pt-2 pb-36 md:pb-16;
   }
 
   .btn-primary {

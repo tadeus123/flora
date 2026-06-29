@@ -43,10 +43,16 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
             <Link
               href="/shop"
-              className="hidden sm:inline-flex text-sm font-medium bg-flora-bark text-flora-cream px-5 py-2.5 rounded-full hover:bg-flora-auburn transition-colors"
+              className="md:hidden text-sm text-flora-bark/80 px-3 py-2 min-h-[2.75rem] flex items-center"
+            >
+              Shop
+            </Link>
+            <Link
+              href="/shop"
+              className="hidden md:inline-flex text-sm font-medium bg-flora-bark text-flora-cream px-5 py-2.5 rounded-full hover:bg-flora-auburn transition-colors"
             >
               Vorbestellen
             </Link>
