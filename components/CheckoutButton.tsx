@@ -4,7 +4,6 @@ import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { formatPrice, type Product } from "@/lib/products";
 import { isStripePublishableConfigured } from "@/lib/site";
-import SiteNotice from "@/components/SiteNotice";
 
 const stripeReady = isStripePublishableConfigured();
 const stripePromise = stripeReady
@@ -77,19 +76,6 @@ export default function CheckoutButton({
 
   return (
     <div className="space-y-3">
-      {!stripeReady && (
-        <SiteNotice variant="warning" title="Zahlung noch nicht aktiv">
-          Stripe wird gerade eingerichtet. Du kannst die Seite schon erkunden —
-          Vorbestellen per Zahlung folgt bald. Fragen?{" "}
-          <a
-            href="mailto:hello@flora-swim.com"
-            className="text-flora-auburn underline underline-offset-2"
-          >
-            hello@flora-swim.com
-          </a>
-        </SiteNotice>
-      )}
-
       <button
         onClick={handleCheckout}
         disabled={disabled || loading || !stripeReady}
@@ -103,7 +89,7 @@ export default function CheckoutButton({
       </button>
 
       {error && (
-        <p className="text-sm text-red-600 text-center" role="alert">
+        <p className="text-sm text-flora-bark/60 text-center" role="alert">
           {error}
         </p>
       )}

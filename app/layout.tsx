@@ -3,8 +3,6 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SetupBanner from "@/components/SetupBanner";
-import { isStripeFullyConfigured } from "@/lib/site";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -42,22 +40,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const hasBanner = !isStripeFullyConfigured();
-
   return (
     <html lang="de" className={`${cormorant.variable} ${dmSans.variable}`}>
       <body className="font-sans antialiased bg-flora-cream text-flora-bark">
         <div className="fixed top-0 left-0 right-0 z-50">
-          <Header hasBanner={hasBanner} />
-          <SetupBanner />
+          <Header />
         </div>
-        <main
-          className={`min-h-screen ${
-            hasBanner
-              ? "pt-[7.25rem] sm:pt-[7.5rem] md:pt-28"
-              : "pt-14 sm:pt-16"
-          }`}
-        >
+        <main className="min-h-screen pt-14 sm:pt-16">
           {children}
         </main>
         <Footer />

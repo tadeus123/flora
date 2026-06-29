@@ -10,7 +10,7 @@ const nav = [
   { href: "/about", label: "Über Flora" },
 ];
 
-export default function Header({ hasBanner = false }: { hasBanner?: boolean }) {
+export default function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -75,13 +75,7 @@ export default function Header({ hasBanner = false }: { hasBanner?: boolean }) {
       </header>
 
       {open && (
-        <div
-          className={`md:hidden fixed inset-x-0 bottom-0 z-[60] bg-flora-cream ${
-            hasBanner
-              ? "top-[7.25rem] sm:top-[7.5rem]"
-              : "top-14 sm:top-16"
-          }`}
-        >
+        <div className="md:hidden fixed inset-x-0 top-14 sm:top-16 bottom-0 z-[60] bg-flora-cream">
           <div className="flex flex-col h-full">
             <nav className="flex-1 px-4 sm:px-6 py-6 flex flex-col gap-1 overflow-y-auto">
               {nav.map((item) => (
