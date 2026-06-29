@@ -18,7 +18,7 @@ export const products: Product[] = [
     name: "The Jump Bikini",
     tagline: "Für den Sprung vom Dreier — und alles danach",
     description:
-      "Mein erstes Design: ein Bikini der hübsch aussieht, sich gut anfühlt und an Ort und Stelle bleibt. Ich kenne das Problem selbst — lose Knoten im Wasser, ständiges Nachjustieren, kein gutes Gefühl am Beckenrand. Genau dafür ist The Jump Bikini da.",
+      "Mein erstes Design — für Mädchen die süß aussehen wollen und trotzdem vom Dreier springen. Ich kenne das Problem: lose Knoten, ständiges Nachjustieren, null gutes Gefühl am Beckenrand.",
     priceInCents: 8900,
     currency: "eur",
     colors: [

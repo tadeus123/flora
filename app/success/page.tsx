@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SiteNotice from "@/components/SiteNotice";
 
 export default function SuccessPage() {
   return (
@@ -22,10 +23,15 @@ export default function SuccessPage() {
         <h1 className="font-display text-4xl md:text-5xl font-medium text-flora-bark mb-4">
           Danke für deine Vorbestellung!
         </h1>
-        <p className="text-flora-bark/70 leading-relaxed mb-10">
+        <p className="text-flora-bark/70 leading-relaxed mb-6">
           Danke — das bedeutet mir viel. Sobald das erste Sample fertig ist,
           melde ich mich mit Updates. Du bist von Anfang an dabei.
         </p>
+        <SiteNotice className="mb-10 text-left" title="Was passiert als Nächstes?">
+          Deine Zahlung ist eingegangen. Versand startet erst nach der
+          Sample-Freigabe — das kann ein paar Wochen dauern. Du hörst von mir,
+          bevor etwas rausgeht.
+        </SiteNotice>
         <Link
           href="/"
           className="inline-flex items-center justify-center bg-flora-bark text-flora-cream px-8 py-4 rounded-full text-sm font-medium tracking-wide hover:bg-flora-auburn transition-colors"

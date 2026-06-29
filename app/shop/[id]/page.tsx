@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import { getProduct } from "@/lib/products";
 import CheckoutButton from "@/components/CheckoutButton";
+import { FloraFlower } from "@/components/FloraArt";
+import { PreorderNotice } from "@/components/SiteNotice";
+import Link from "next/link";
 
 export default function ProductPage() {
   const params = useParams();
@@ -18,8 +21,17 @@ export default function ProductPage() {
 
   if (!product || product.status !== "preorder") {
     return (
-      <div className="pt-24 pb-16 text-center">
-        <p className="text-flora-bark/70">Produkt nicht gefunden.</p>
+      <div className="pt-24 pb-16 text-center px-6">
+        <p className="text-flora-bark/70 mb-2">Dieses Produkt gibt es noch nicht.</p>
+        <p className="text-sm text-flora-bark/50 mb-8">
+          Wave Top und weitere Designs kommen bald.
+        </p>
+        <Link
+          href="/shop"
+          className="text-sm text-flora-auburn hover:underline"
+        >
+          Zurück zum Shop
+        </Link>
       </div>
     );
   }
@@ -27,10 +39,12 @@ export default function ProductPage() {
   return (
     <div className="pt-24 pb-16">
       <div className="max-w-6xl mx-auto px-6">
+        <PreorderNotice className="mb-10" />
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
           {/* Product image placeholder */}
-          <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-flora-terracotta/25 via-flora-blush/30 to-flora-moss/20 flex items-center justify-center sticky top-24">
-            <div className="text-center p-8">
+          <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-flora-terracotta/25 via-flora-blush/30 to-flora-moss/20 flex items-center justify-center sticky top-24 relative overflow-hidden">
+            <FloraFlower className="absolute top-6 right-6 w-10 h-10 text-flora-auburn/15" />
+            <div className="text-center p-8 relative">
               <p className="font-display text-4xl text-flora-bark/30 mb-2">
                 {product.name}
               </p>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FloraFlower } from "@/components/FloraArt";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -12,9 +13,10 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="font-display text-2xl tracking-[0.2em] font-medium text-flora-bark hover:text-flora-auburn transition-colors"
+          className="flex items-center gap-2 font-display text-2xl tracking-[0.2em] font-medium text-flora-bark hover:text-flora-auburn transition-colors group"
         >
           FLORA
+          <FloraFlower className="w-3.5 h-3.5 text-flora-terracotta/60 group-hover:text-flora-auburn/70 transition-colors hidden sm:block" />
         </Link>
         <nav className="flex items-center gap-4 sm:gap-8">
           {nav.map((item) => (

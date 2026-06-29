@@ -1,14 +1,28 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStripe } from "@/lib/stripe";
 import { getProduct } from "@/lib/products";
+import { isStripeFullyConfigured } from "@/lib/site";
 
 export async function POST(req: NextRequest) {
   try {
+    if (!isStripeFullyConfigured()) {
+      return NextResponse.json(
+        {
+          error:
+            "Online-Zahlung ist noch nicht eingerichtet. Bitte später nochmal versuchen.",
+        },
+        { status: 503 }
+      );
+    }
+
     const { productId, color, size } = await req.json();
 
     const product = getProduct(productId);
     if (!product || product.status !== "preorder") {
-      return NextResponse.json({ error: "Product not found" }, { status: 404 });
+      return NextResponse.json(
+        { error: "Dieses Produkt ist nicht verfügbar." },
+        { status: 404 }
+      );
     }
 
     const stripe = getStripe();
@@ -56,7 +70,11 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("Checkout error:", err);
     const message =
-      err instanceof Error ? err.message : "Checkout failed";
+      err instanceof Error && err.message.includes("STRIPE")
+        ? "Online-Zahlung ist noch nicht eingerichtet."
+        : err instanceof Error
+          ? err.message
+          : "Zahlung fehlgeschlagen. Bitte später nochmal versuchen.";
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }

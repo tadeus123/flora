@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FloraDivider, FloraDoodle, FloraFlower } from "@/components/FloraArt";
 
 export default function HomePage() {
   return (
@@ -8,10 +9,12 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-flora-blush/30 via-flora-cream to-flora-cream" />
         <div className="absolute top-1/4 -right-32 w-96 h-96 rounded-full bg-flora-terracotta/10 blur-3xl" />
         <div className="absolute bottom-1/4 -left-32 w-80 h-80 rounded-full bg-flora-moss/10 blur-3xl" />
+        <FloraFlower className="absolute top-28 left-8 md:left-16 w-8 h-8 text-flora-terracotta/25 flora-float hidden md:block" />
+        <FloraDoodle className="absolute bottom-32 right-6 md:right-20 w-14 h-14 text-flora-auburn/20 flora-float-delay hidden md:block" />
 
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-6 animate-fade-in">
-            Flora clothing GmbH · Dresden
+            FLORA · Dresden
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-flora-bark leading-[1.1] mb-8 animate-fade-up [animation-delay:200ms]">
             Swimwear that
@@ -19,8 +22,8 @@ export default function HomePage() {
             <span className="italic text-flora-auburn">stays with you</span>
           </h1>
           <p className="text-lg md:text-xl text-flora-bark/70 max-w-xl mx-auto mb-10 leading-relaxed animate-fade-up [animation-delay:400ms] text-balance">
-            Bikinis für Frauen und Mädchen, die sich wohlfühlen wollen — schön,
-            bequem, und beim Sprung vom Dreier nicht verrutschen.
+            Für Mädchen die süß aussehen wollen — und trotzdem ohne Sorgen vom
+            Dreier springen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up [animation-delay:600ms]">
             <Link
@@ -36,6 +39,7 @@ export default function HomePage() {
               Meine Geschichte
             </Link>
           </div>
+          <FloraDivider className="mt-14" />
         </div>
       </section>
 
@@ -58,14 +62,15 @@ export default function HomePage() {
                 an alles andere.
               </p>
               <p className="text-flora-bark/70 leading-relaxed">
-                Viele Mädchen und Frauen springen deshalb nicht vom Dreier. Nicht
-                weil sie nicht wollen — sondern weil sie sich nicht sicher fühlen.
-                Das wollte ich ändern.
+                Viele springen deshalb nicht vom Dreier — nicht weil sie nicht
+                wollen, sondern weil sie sich nicht sicher fühlen. Genau das
+                kenne ich.
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-flora-sand via-flora-blush/40 to-flora-terracotta/20 flex items-center justify-center">
-                <div className="text-center p-8">
+              <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-flora-sand via-flora-blush/40 to-flora-terracotta/20 flex items-center justify-center relative overflow-hidden">
+                <FloraFlower className="absolute top-6 right-6 w-10 h-10 text-flora-auburn/15" />
+                <div className="text-center p-8 relative">
                   <p className="font-display text-6xl text-flora-auburn/30 mb-4">
                     3m
                   </p>
@@ -83,7 +88,7 @@ export default function HomePage() {
       <section className="py-24 md:py-32 bg-flora-sand/40">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-4">
-            Unsere Werte
+            Worum es geht
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-medium text-flora-bark mb-16">
             Schön. Bequem. Selbstbewusst.
@@ -92,7 +97,7 @@ export default function HomePage() {
             {[
               {
                 title: "Schön",
-                desc: "Du willst gut aussehen und dich wohlfühlen — ohne ständig an deinen Bikini zu denken.",
+                desc: "Süß aussehen am Freibad — ohne dass du dich dabei unsicher fühlst.",
               },
               {
                 title: "Bequem",
@@ -120,8 +125,9 @@ export default function HomePage() {
       <section className="py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-flora-terracotta/20 to-flora-moss/20 flex items-center justify-center order-2 md:order-1">
-              <div className="text-center">
+            <div className="aspect-square rounded-2xl bg-gradient-to-br from-flora-terracotta/20 to-flora-moss/20 flex items-center justify-center order-2 md:order-1 relative overflow-hidden">
+              <FloraDoodle className="absolute -bottom-2 -left-2 w-20 h-20 text-flora-terracotta/15" />
+              <div className="text-center relative">
                 <p className="font-display text-3xl text-flora-bark mb-2">
                   The Jump Bikini
                 </p>
@@ -138,9 +144,9 @@ export default function HomePage() {
                 The Jump Bikini
               </h2>
               <p className="text-flora-bark/70 leading-relaxed mb-8">
-                Mein erstes Design — aus einem Problem, das ich selbst kenne.
-                Für alle die vom Beckenrand springen wollen, ohne sich Sorgen um
-                ihren Bikini zu machen.
+                Mein erstes Design — aus einem Problem, das ich mit 17 selbst
+                kenne. Für alle die vom Beckenrand springen wollen, ohne sich
+                Sorgen um ihren Bikini zu machen.
               </p>
               <p className="font-display text-3xl text-flora-bark mb-8">89 €</p>
               <Link
@@ -163,8 +169,8 @@ export default function HomePage() {
             <span className="italic text-flora-blush">In Dresden.</span>
           </h2>
           <p className="text-flora-cream/60 leading-relaxed mb-10">
-            Ich fange klein an — mit Freunden in Dresden und Sachsen — und lerne
-            jeden Tag dazu. Wenn du von Anfang an dabei sein willst: willkommen.
+            Ich fange in Dresden an — erst mit Freundinnen, dann weiter. Wenn
+            du auch so ein Bikini-Problem kennst: du bist nicht allein.
           </p>
           <Link
             href="/shop"

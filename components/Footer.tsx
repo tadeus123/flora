@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FloraFlower } from "@/components/FloraArt";
 
 export default function Footer() {
   return (
@@ -6,8 +7,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <p className="font-display text-2xl tracking-[0.2em] text-flora-cream mb-4">
+            <p className="font-display text-2xl tracking-[0.2em] text-flora-cream mb-4 flex items-center gap-2">
               FLORA
+              <FloraFlower className="w-3.5 h-3.5 text-flora-blush/50" />
             </p>
             <p className="text-sm leading-relaxed text-flora-cream/60">
               Flora clothing GmbH
