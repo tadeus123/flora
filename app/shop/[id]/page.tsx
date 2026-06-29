@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import { getProduct } from "@/lib/products";
 import CheckoutButton from "@/components/CheckoutButton";
-import { FloraFlower } from "@/components/FloraArt";
 import { PreorderNotice } from "@/components/SiteNotice";
 import Link from "next/link";
 
@@ -41,10 +40,9 @@ export default function ProductPage() {
       <div className="max-w-6xl mx-auto">
         <PreorderNotice className="mb-8 sm:mb-10" />
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
-          <div className="aspect-[3/4] max-h-[55vh] sm:max-h-none md:max-h-none rounded-2xl bg-gradient-to-br from-flora-terracotta/25 via-flora-blush/30 to-flora-moss/20 flex items-center justify-center md:sticky md:top-28 relative overflow-hidden">
-            <FloraFlower className="absolute top-6 right-6 w-10 h-10 text-flora-auburn/15" />
-            <div className="text-center p-8 relative">
-              <p className="font-display text-3xl sm:text-4xl text-flora-bark/30 mb-2">
+          <div className="media-placeholder aspect-[3/4] max-h-[55vh] sm:max-h-none md:sticky md:top-28">
+            <div className="text-center p-6">
+              <p className="font-display text-2xl sm:text-3xl text-flora-bark/40 mb-2">
                 {product.name}
               </p>
               <p className="text-xs tracking-widest uppercase text-flora-bark/40">
@@ -53,7 +51,6 @@ export default function ProductPage() {
             </div>
           </div>
 
-          {/* Product details */}
           <div>
             <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-4">
               Vorbestellung

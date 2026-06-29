@@ -29,7 +29,11 @@
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center w-full sm:w-auto border border-flora-bark/20 text-flora-bark px-8 py-4 min-h-[3rem] rounded-full text-sm font-medium tracking-wide hover:border-flora-auburn hover:text-flora-auburn active:scale-[0.98] transition-colors;
+    @apply inline-flex items-center justify-center w-full sm:w-auto border border-flora-sand text-flora-bark px-8 py-4 min-h-[3rem] rounded-full text-sm font-medium tracking-wide hover:border-flora-bark hover:text-flora-bark active:scale-[0.98] transition-colors;
+  }
+
+  .media-placeholder {
+    @apply flex items-center justify-center border border-flora-sand bg-flora-sand/20;
   }
 }
 
