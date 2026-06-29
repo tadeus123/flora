@@ -37,22 +37,4 @@
   .text-balance {
     text-wrap: balance;
   }
-
-  .flora-float {
-    animation: floraFloat 6s ease-in-out infinite;
-  }
-
-  .flora-float-delay {
-    animation: floraFloat 7s ease-in-out 1.5s infinite;
-  }
-}
-
-@keyframes floraFloat {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-6px) rotate(3deg);
-  }
 }

@@ -9,24 +9,24 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-flora-blush/30 via-flora-cream to-flora-cream" />
         <div className="absolute top-1/4 -right-32 w-96 h-96 rounded-full bg-flora-terracotta/10 blur-3xl" />
         <div className="absolute bottom-1/4 -left-32 w-80 h-80 rounded-full bg-flora-moss/10 blur-3xl" />
-        <FloraFlower className="absolute top-8 left-4 w-6 h-6 text-flora-terracotta/20 flora-float md:hidden" />
-        <FloraFlower className="absolute top-28 left-8 md:left-16 w-8 h-8 text-flora-terracotta/25 flora-float hidden md:block" />
-        <FloraDoodle className="absolute bottom-32 right-6 md:right-20 w-14 h-14 text-flora-auburn/20 flora-float-delay hidden md:block" />
+        <FloraFlower className="absolute top-8 left-4 w-6 h-6 text-flora-terracotta/20 md:hidden" />
+        <FloraFlower className="absolute top-28 left-8 md:left-16 w-8 h-8 text-flora-terracotta/25 hidden md:block" />
+        <FloraDoodle className="absolute bottom-32 right-6 md:right-20 w-14 h-14 text-flora-auburn/20 hidden md:block" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center py-8">
-          <p className="text-[10px] sm:text-xs tracking-[0.25em] sm:tracking-[0.3em] uppercase text-flora-auburn mb-4 sm:mb-6 animate-fade-in">
+          <p className="text-[10px] sm:text-xs tracking-[0.25em] sm:tracking-[0.3em] uppercase text-flora-auburn mb-4 sm:mb-6">
             FLORA · Dresden
           </p>
-          <h1 className="font-display text-[2.35rem] leading-[1.08] sm:text-5xl md:text-7xl lg:text-8xl font-medium text-flora-bark mb-5 sm:mb-8 animate-fade-up [animation-delay:200ms]">
+          <h1 className="font-display text-[2.35rem] leading-[1.08] sm:text-5xl md:text-7xl lg:text-8xl font-medium text-flora-bark mb-5 sm:mb-8">
             Swimwear that
             <br />
             <span className="italic text-flora-auburn">stays with you</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-flora-bark/70 max-w-xl mx-auto mb-8 sm:mb-10 leading-relaxed animate-fade-up [animation-delay:400ms] text-balance px-1">
+          <p className="text-base sm:text-lg md:text-xl text-flora-bark/70 max-w-xl mx-auto mb-8 sm:mb-10 leading-relaxed text-balance px-1">
             Für Mädchen die süß aussehen wollen — und trotzdem ohne Sorgen vom
             Dreier springen.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center max-w-sm sm:max-w-none mx-auto animate-fade-up [animation-delay:600ms]">
+          <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center max-w-sm sm:max-w-none mx-auto">
             <Link href="/shop" className="btn-primary">
               Jetzt vorbestellen
             </Link>
