@@ -5,11 +5,31 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
 
   ::selection {
     background-color: #e8c4b8;
     color: #3d2e28;
+  }
+}
+
+@layer components {
+  .page-wrap {
+    @apply px-4 sm:px-6 pb-12 md:pb-16;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center w-full sm:w-auto bg-flora-bark text-flora-cream px-8 py-4 min-h-[3rem] rounded-full text-sm font-medium tracking-wide hover:bg-flora-auburn active:scale-[0.98] transition-all;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center w-full sm:w-auto border border-flora-bark/20 text-flora-bark px-8 py-4 min-h-[3rem] rounded-full text-sm font-medium tracking-wide hover:border-flora-auburn hover:text-flora-auburn active:scale-[0.98] transition-colors;
   }
 }
 

@@ -4,8 +4,8 @@ import { FloraFlower } from "@/components/FloraArt";
 export default function Footer() {
   return (
     <footer className="bg-flora-bark text-flora-cream/80">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-12">
           <div>
             <p className="font-display text-2xl tracking-[0.2em] text-flora-cream mb-4 flex items-center gap-2">
               FLORA
@@ -50,7 +50,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-flora-cream/10 flex flex-col sm:flex-row justify-between gap-4 text-xs text-flora-cream/40">
+        <div className="mt-10 sm:mt-12 pt-8 border-t border-flora-cream/10 flex flex-col gap-3 sm:flex-row sm:justify-between text-xs text-flora-cream/40 text-center sm:text-left">
           <p>© {new Date().getFullYear()} Flora clothing GmbH</p>
           <p>Schön. Bequem. Bleibt wo sie ist.</p>
         </div>

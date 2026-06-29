@@ -5,13 +5,13 @@ import { PreorderNotice } from "@/components/SiteNotice";
 
 export default function ShopPage() {
   return (
-    <div className="pt-24 pb-16">
-      <div className="max-w-6xl mx-auto px-6">
+    <div className="page-wrap">
+      <div className="max-w-6xl mx-auto">
         <div className="mb-10">
           <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-4">
             Shop
           </p>
-          <h1 className="font-display text-4xl md:text-6xl font-medium text-flora-bark mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl font-medium text-flora-bark mb-3 sm:mb-4">
             Kollektion
           </h1>
           <p className="text-flora-bark/70 max-w-lg">

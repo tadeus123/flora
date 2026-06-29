@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="pt-24 pb-16 min-h-[60vh] flex items-center">
-      <div className="max-w-md mx-auto px-6 text-center">
+    <div className="page-wrap min-h-[55vh] flex items-center">
+      <div className="max-w-md mx-auto w-full text-center">
         <h1 className="font-display text-5xl text-flora-bark mb-4">404</h1>
         <p className="text-flora-bark/70 mb-2">Diese Seite gibt es nicht.</p>
         <p className="text-sm text-flora-bark/50 mb-8">

@@ -93,7 +93,7 @@ export default function CheckoutButton({
       <button
         onClick={handleCheckout}
         disabled={disabled || loading || !stripeReady}
-        className="w-full bg-flora-bark text-flora-cream py-4 rounded-full text-sm font-medium tracking-wide hover:bg-flora-auburn transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-flora-bark text-flora-cream py-4 min-h-[3rem] rounded-full text-sm font-medium tracking-wide hover:bg-flora-auburn active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation"
       >
         {loading
           ? "Wird geladen…"

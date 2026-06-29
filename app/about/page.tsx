@@ -4,8 +4,8 @@ import { FloraDivider, FloraFlower } from "@/components/FloraArt";
 
 export default function AboutPage() {
   return (
-    <div className="pt-24 pb-16">
-      <div className="max-w-6xl mx-auto px-6">
+    <div className="page-wrap">
+      <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-20">
           <div className="relative aspect-[4/5] max-w-sm mx-auto md:mx-0 w-full">
             <div className="absolute -inset-2 rounded-[1.25rem] bg-gradient-to-br from-flora-blush/40 to-flora-sand/60 -z-10" />
@@ -26,7 +26,7 @@ export default function AboutPage() {
               <FloraFlower className="w-3 h-3 text-flora-terracotta/60" />
               Über Flora
             </p>
-            <h1 className="font-display text-4xl md:text-5xl font-medium text-flora-bark mb-6 leading-tight">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-medium text-flora-bark mb-5 sm:mb-6 leading-tight">
               Hi, ich bin Flora — 17, aus Dresden.
             </h1>
             <div className="space-y-4 text-flora-bark/70 leading-relaxed">
