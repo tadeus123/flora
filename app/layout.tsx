@@ -19,13 +19,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "FLORA — Schön. Bequem. Bleibt wo sie ist.",
+  title: "FLORA — Bikinis für mehr Selbstvertrauen",
   description:
-    "Bikinis für junge Frauen — schön, bequem, und sie bleiben beim Sprung vom Dreier wo sie sind. Von Flora, Dresden.",
+    "Swimwear die Mädchen selbstbewusster macht — schön, bequem, und ohne ständige Bikini-Sorgen. Von Flora, Dresden.",
   openGraph: {
     title: "FLORA — Swimwear that stays with you",
     description:
-      "Bikinis für Mädchen die süß aussehen wollen und sich am Beckenrand sicher fühlen.",
+      "Bikinis die Mädchen selbstbewusster machen — am Freibad, im Schwimmbad, überall.",
     type: "website",
   },
 };

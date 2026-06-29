@@ -15,8 +15,8 @@ export default function ShopPage() {
             Kollektion
           </h1>
           <p className="text-flora-bark/70 max-w-lg">
-            Mein erstes Design — gemacht für Mädchen, die das Bikini-Problem
-            kennen.
+            Swimwear für Mädchen, die sich im Bikini sicher und selbstbewusst
+            fühlen wollen.
           </p>
         </div>
 

@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 sm:mt-12 pt-8 border-t border-flora-cream/10 flex flex-col gap-3 sm:flex-row sm:justify-between text-xs text-flora-cream/40 text-center sm:text-left">
           <p>© {new Date().getFullYear()} Flora clothing GmbH</p>
-          <p>Schön. Bequem. Bleibt wo sie ist.</p>
+          <p>Schön. Bequem. Selbstbewusst.</p>
         </div>
       </div>
     </footer>

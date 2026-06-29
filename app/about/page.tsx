@@ -31,19 +31,19 @@ export default function AboutPage() {
             </h1>
             <div className="space-y-4 text-flora-bark/70 leading-relaxed">
               <p>
-                Lange wusste ich nicht, was ich machen will. Aber ich wollte
-                etwas, das Mädchen selbstbewusster macht — am Freibad, im
-                Schwimmbad, einfach überall wo man im Bikini ist.
+                Lange wusste ich nicht, was ich machen will. Aber ich wusste: Ich
+                will etwas, das Mädchen selbstbewusster macht — am Freibad, im
+                Schwimmbad, überall wo man im Bikini ist.
               </p>
               <p>
-                Die meisten Bikinis sehen süß aus — bis du vom Dreier springst.
-                Dann lösen sich Knoten, Bänder rutschen, und plötzlich denkst du
-                mehr an deinen Bikini als an den Sprung. Kennst du das?
+                Dafür braucht es Bikinis, in denen du dich wirklich sicher
+                fühlst. Nicht nur süß aussehen — sondern frei sein, ohne
+                ständig an lose Knoten oder rutschende Bänder zu denken.
               </p>
               <p>
-                Deshalb FLORA: Bikinis für Mädchen wie mich. Hübsch, bequem, und
-                sie bleiben wo sie hingehören. Ich bin noch am Anfang — und lerne
-                jeden Tag dazu.
+                Der Sprung vom Dreier war für mich nur ein Beispiel, warum das
+                fehlt. Deshalb FLORA: Swimwear für Mädchen wie mich. Ich bin
+                noch am Anfang — und lerne jeden Tag dazu.
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
                 {
                   step: "03",
                   title: "Mehr Selbstvertrauen",
-                  desc: "Damit du dich am Beckenrand frei fühlst — nicht verunsichert.",
+                  desc: "Damit du dich im Bikini frei fühlst — am Wasser und überall.",
                 },
               ].map((item) => (
                 <div
@@ -96,7 +96,7 @@ export default function AboutPage() {
           <section className="py-16 border-t border-flora-sand text-center">
             <FloraDivider className="mb-10" />
             <p className="font-display text-xl md:text-2xl text-flora-bark italic leading-relaxed text-balance">
-              Schön. Bequem. Bleibt wo sie ist.
+              Schön. Bequem. Selbstbewusst.
             </p>
           </section>
 

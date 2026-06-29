@@ -23,8 +23,8 @@ export default function HomePage() {
             <span className="italic text-flora-auburn">stays with you</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-flora-bark/70 max-w-xl mx-auto mb-8 sm:mb-10 leading-relaxed text-balance px-1">
-            Für Mädchen die süß aussehen wollen — und trotzdem ohne Sorgen vom
-            Dreier springen.
+            Bikinis die Mädchen selbstbewusster machen — schön, bequem, und
+            ohne ständig an den Bikini zu denken.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center max-w-sm sm:max-w-none mx-auto">
             <Link href="/shop" className="btn-primary">
@@ -44,33 +44,36 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div className="order-2 md:order-1">
               <p className="text-xs tracking-[0.3em] uppercase text-flora-auburn mb-3 sm:mb-4">
-                Das Problem
+                Die Vision
               </p>
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-medium text-flora-bark mb-4 sm:mb-6 leading-tight">
-                Knoten lösen sich.
+                Mehr Selbstvertrauen
                 <br />
-                Bikinis rutschen.
+                im Bikini.
               </h2>
               <p className="text-flora-bark/70 leading-relaxed mb-4 text-[15px] sm:text-base">
-                Kennst du das? Wasserdruck beim Sprung, lose Bänder, Stoffe die
-                nicht halten — und plötzlich denkst du mehr an deinen Bikini als
-                an alles andere.
+                FLORA ist Swimwear, in der du dich sicher fühlst — hübsch,
+                bequem, und ohne dass du ständig checkst ob noch alles sitzt.
               </p>
               <p className="text-flora-bark/70 leading-relaxed text-[15px] sm:text-base">
-                Viele springen deshalb nicht vom Dreier — nicht weil sie nicht
-                wollen, sondern weil sie sich nicht sicher fühlen. Genau das
-                kenne ich.
+                <span className="text-flora-bark font-medium">Ein Beispiel:</span>{" "}
+                Beim Sprung vom Dreier lösen sich bei vielen Bikinis die Knoten —
+                und plötzlich denkst du mehr an deinen Bikini als an den Moment.
+                Genau so was soll nicht mehr passieren.
               </p>
             </div>
             <div className="relative order-1 md:order-2">
               <div className="aspect-[4/5] max-h-[70vh] md:max-h-none rounded-2xl bg-gradient-to-br from-flora-sand via-flora-blush/40 to-flora-terracotta/20 flex items-center justify-center relative overflow-hidden">
                 <FloraFlower className="absolute top-6 right-6 w-10 h-10 text-flora-auburn/15" />
                 <div className="text-center p-8 relative">
+                  <p className="text-xs tracking-widest uppercase text-flora-bark/40 mb-3">
+                    z.&nbsp;B.
+                  </p>
                   <p className="font-display text-5xl sm:text-6xl text-flora-auburn/30 mb-4">
                     3m
                   </p>
                   <p className="text-xs sm:text-sm tracking-wide text-flora-bark/50 uppercase">
-                    Sprungbrett · selbstbewusst
+                    Sprungbrett
                   </p>
                 </div>
               </div>
@@ -100,7 +103,7 @@ export default function HomePage() {
               },
               {
                 title: "Selbstbewusst",
-                desc: "Wenn dein Bikini hält, denkst du an den Sprung — nicht an lose Knoten.",
+                desc: "Du denkst an dich — nicht daran, ob dein Bikini mitmacht.",
               },
             ].map((item) => (
               <div
@@ -142,9 +145,10 @@ export default function HomePage() {
                 The Jump Bikini
               </h2>
               <p className="text-flora-bark/70 leading-relaxed mb-6 sm:mb-8 text-[15px] sm:text-base">
-                Mein erstes Design — aus einem Problem, das ich mit 17 selbst
-                kenne. Für alle die vom Beckenrand springen wollen, ohne sich
-                Sorgen um ihren Bikini zu machen.
+                Mein erstes Design für mehr Selbstvertrauen im Bikini — schön,
+                bequem, und gemacht damit du dich am Wasser frei fühlst. Der
+                Sprung vom Dreier war nur der Moment, der mir gezeigt hat, warum
+                das wichtig ist.
               </p>
               <p className="font-display text-2xl sm:text-3xl text-flora-bark mb-6 sm:mb-8">
                 89 €
@@ -166,8 +170,9 @@ export default function HomePage() {
             <span className="italic text-flora-blush">In Dresden.</span>
           </h2>
           <p className="text-flora-cream/60 leading-relaxed mb-8 sm:mb-10 text-[15px] sm:text-base">
-            Ich fange in Dresden an — erst mit Freundinnen, dann weiter. Wenn du
-            auch so ein Bikini-Problem kennst: du bist nicht allein.
+            Ich baue FLORA für Mädchen die sich im Bikini sicher fühlen wollen —
+            nicht verunsichert. Gerade fange ich in Dresden an, mit Freundinnen
+            an meiner Seite.
           </p>
           <Link
             href="/shop"
